@@ -1,0 +1,468 @@
+
+* {
+    box-sizing: border-box;
+    font-family: 'Red Hat Text', sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.header {
+    position: relative;
+    box-shadow: 0px 0px 1px black;
+    height: 100vh;
+}
+.header .font1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.header .font1 img {
+   height: 100vh;
+}
+.navbar {
+    position: relative;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 8%;
+    padding: 20px 0;
+    vertical-align: middle;
+}
+.navbar-info {
+    display: flex;
+    justify-content: space-around;
+}
+.navbar-info .commande {
+    display: inline-block;
+    padding: 0px 15px;
+    margin-top: 6px;
+}
+.navbar-info .profile {
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 10px;
+}
+.navbar-info .users {
+    margin-top: 10px;
+    display: inline-block;
+    padding-right: 20px;
+    color: white;
+    font-weight: bold;
+}
+.header .title-primary ,.title-secondary{
+    margin-top: 40px;
+    margin-left: 8%;
+}
+.header .title-secondary {
+    margin-top: 80px;
+}
+.title-primary .header-subtible{
+    margin-top: 5px;
+    font-size: 1.4em;
+    font-weight: lighter;
+}
+.title-primary .header-title {
+    font-weight: lighter;
+    width: 48%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    line-height: 1.2;
+    font-size: 2.4em;
+}
+.title-primary .header-title .primary-color {
+    color: #D6DB46;
+    font-weight: bold;
+}
+.title-secondary .header-title {
+    position: relative;
+    font-weight: lighter;
+    width: 60%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    line-height: 1.2;
+    font-size: 2.4em;
+    z-index: inherit;
+    color: #a9a9a9;
+}
+.header .header-option {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    width: 60%;
+    margin-left: 8%;
+    margin-top: 30px;
+    background-color: #D6DB46;
+    padding: 30px 0; 
+    
+}
+.form-group select ,.form-group .form-control {
+    padding: 10px 30px;
+    outline: none;
+    border-color: #D6DB46;
+    
+}
+.form-group .btn-primary {
+    padding: 10px 40px;
+    outline: none;
+    border-color: #a9a9a9;
+    background-color: #fff;
+    border:none;
+    
+}
+.main {
+    background: #fafafa;
+}
+.main .activity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.activity .activity-details {
+    position: relative;
+    top: 80px;
+    width: 55%;
+    background: #fff;
+    box-shadow: 0px 0px 2px black;
+    padding: 20px 30px;
+}
+.activity-details .title {
+    color: rgba(0, 0, 0, .6);
+    font-weight: bold;
+}
+.activity-details .details-icon {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0;
+}
+.activity-details .details-description {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    text-align: center;
+}
+.details-description .title, .choice .title, .content .title {
+    color: rgba(0, 0, 0, .6);
+    font-weight: bold;
+}
+.details-description .content,.choice .subtitle ,.content .subtitle{
+    color: rgba(0, 0, 0, .4);
+}
+.choice .title {
+    margin-bottom: 0;
+}
+.choice .subtitle {
+    margin-top: 3px;
+}
+.main .choice {
+    padding: 10% 6%;
+    padding-bottom: 0;
+    background: #fff;
+    box-shadow: 3px 0px 1px black;
+}
+.main .cards {
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    grid-column-gap: 3%;
+    padding: 20px 0;
+}
+.cards .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    height: 300px;
+    box-shadow: 0px 0px 1px black;
+}
+.cards .card:hover {
+    
+    filter: contrast(130%)
+    
+}
+.card .badge,.card .badge-text {
+    position: absolute;
+    left: 0;
+}
+.card .badge-text {
+    margin-top: 5px;
+    margin-left: 8px;
+    color: white;
+    font-weight: 300;
+}
+.cards .close {
+    opacity: 20%;
+}
+.card-img img {
+    width: 100%;
+}
+.card .card-body {
+    margin-top: 0;
+}
+.card-body .info {
+    display: flex;
+    justify-content: space-around;
+}
+.info .info-title {
+    color: rgba(0, 0, 0, .6);
+}
+.info .bold {
+    font-weight: bold;
+}
+.card-body .title {
+    margin-top: 0;
+    color: rgba(0, 0, 0, .6);
+    padding: 0px 20px;
+    font-weight: bold;
+}
+.card-body .subtitle {
+    margin-top: 5px;
+    color: rgba(0, 0, 0, .4);
+    padding: 0px 20px;
+}
+.choice .load {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.load .btn-primary ,.content  .btn-primary{
+    background: #D6DB46;
+    color: white;
+    padding: 15px 30px;
+    outline: none;
+    border: none;
+}
+.load :focus .btn-primary .content :focus .btn-primary{
+    outline: none;
+}
+.main .get_started {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: #fff;
+    height: 551px;
+}
+.get_started .font2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.get_started .content {
+    width: 40%;
+    text-align: center;
+}
+.main .subscribe {
+    display: flex;
+    flex-direction: column;
+    background-color: #D6DB46;
+    align-items: center;
+    padding: 50px 0px;
+    margin-top: 2%;
+}
+.subscribe-content {
+    text-align: center;
+    width: 35%;
+}
+.subscribe-content .title {
+    font-weight: bold;
+    color: white;
+    margin-bottom: 0;
+}
+.subscribe-content .subtitle {
+    color: white;
+    margin-top: 8px;
+}
+.subscribe-info {
+    display: flex;
+    justify-content: center;
+}
+.subscribe-info .form-group .form-control {
+    border: 1px solid #fff;
+    color: #fff;
+    margin: 1px 2px;
+    background-color: #D6DB46;
+}
+.form-group .btn {
+    color: #D6DB46;
+    background-color: #fff;
+    padding: 12px 30px;
+    outline: none;
+    border: none; 
+}
+.form-group ::placeholder {
+    color: white;
+}
+.download {
+    display: flex;
+    position: relative;
+    height: 100vh;
+    margin-bottom: 50px;
+    background-color: #fff;
+}
+.download-picture img {
+    margin-top: -16%;
+}
+.download .download-info {
+    margin-top: 100px;
+    width: 40%;
+    position: relative;
+}
+.gauche {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+}
+.droite {
+    position: absolute;
+    top: 50%;
+    right: 1%;
+}
+.download-title1 {
+    text-align: center;
+    font-weight: bold;
+    opacity: 60%;
+    margin-bottom: 0;
+}
+.download-title2 {
+    text-align: center;
+    font-weight: bold;
+    color: #D6DB46;
+    margin-top: 5px;
+}
+.download-subtitle {
+    text-align: center;
+    opacity: 60%;
+}
+.download-service {
+    display: flex;
+    justify-content: center;
+}
+.download-numero {
+    display: flex;
+    justify-content: space-between;
+}
+.download-numero div {
+    margin: 25px 60px;
+}
+.download-service div {
+    margin: 0px 15px;
+}
+.download-numero-description {
+    display: flex;
+    justify-content: space-between;
+}
+.download-numero-description2 {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+    margin-left: -8%;
+}
+
+.download-numero-description .part1 {
+    margin-left: -55px;
+    padding: 0 20px;
+}
+.download-numero-description .part2 {
+    margin-right: -65px;
+    padding: 0 20px;
+}
+.download-title3 {
+    text-align: center;
+    font-weight: bold;
+    opacity: 60%;
+}
+.download-subtitle2 {
+    text-align: center;
+    opacity: 60%;
+}
+.commander {
+    display: flex;
+    margin: 10% 0 ;
+    justify-content: center;
+}
+.commander-card {
+    background-color: #fff;
+    box-shadow: 0px 0px 1px black;
+    padding: 0px 20px;
+    padding-bottom: 30px;
+}
+.commander-card .form {
+    display: flex;
+    justify-content: center;
+}
+.commander .form-group .form-control {
+    border: 1px solid #ccc;
+    margin: 0px 5px;
+    color: #D6DB46;
+    font-weight: bold;
+}
+.commander .form-group ::placeholder {
+    color: #D6DB46;
+}
+.commander .title {
+    color: #D6DB46;
+    font-weight: bold;
+}
+.commander .form-group .btn {
+    background-color: #D6DB46;
+    color: #fff;
+    outline: none;
+    border: none;
+    padding: 10px 24px;
+}
+.footer .logo {
+    padding-left: 6%;
+}
+.footer .trait {
+    margin: 1% 4%;
+    margin-bottom: 15px;
+    background-color: #D6DB46;
+    height: 1px;
+}
+.footer-info {
+    margin: 0% 6%;
+    display: flex;
+    justify-content: space-between;
+}
+.download-service1 {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0;
+}
+.footer-info .form-group .form-control {
+    border: none;
+    opacity: 60%;
+    padding: 0px;
+}
+.footer-info p {
+    opacity: 60%;
+}
+.footer-copyright {
+    margin: 0% 6%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-copyright p {
+    opacity: 60%;
+}
+
+
+.reveal [class*="reveal-"] {
+    opacity: 0;
+    transform: translateY(30px);
+}
+.reveal-visible [class*="reveal-"] {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: 1s cubic-bezier(.5,0,0,1);
+}
+.reveal-visible .reveal-2 {
+    transition-delay: .1s;
+}
+.reveal-visible .reveal-3 {
+    transition-delay: .2s;
+}
+.reveal-visible .reveal-4 {
+    transition-delay: .3s;
+}
+

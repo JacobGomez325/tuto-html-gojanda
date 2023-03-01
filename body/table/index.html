@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MonSuperSite</title>
+    <style>
+        tr,td,th{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Les tableaux en HTML</h1>
+    <legend>Mes utilisateurs</legend>
+    <table>
+        <tr>
+            <td>username</td>
+            <td>email</td>
+            <td>role</td>
+            <td>action</td>
+        </tr>
+        <tr>
+            <td>John doe</td>
+            <td>Johndoe@gmail.com</td>
+            <td>SUPER_ADMIN</td>
+            <td>
+                <a href="#">supprimer</a>
+                <a href="#">Modifier</a>
+            </td>
+        </tr>
+        <tr>
+            <td>Gomez jacob</td>
+            <td>demo12345789@gmail.com</td>
+            <td>SUPER_ADMIN</td>
+            <td>
+                <a href="#">supprimer</a>
+                <a href="#">Modifier</a>
+            </td>
+        </tr>
+        <tr>
+            <td>Adjin Bernice</td>
+            <td>demo@gmail.com</td>
+            <td>AGENT</td>
+            <td>
+                <a href="#">supprimer</a>
+                <a href="#">Modifier</a>
+            </td>
+        </tr>
+    </table>
+    <hr>
+    <legend>Mes produits</legend>
+    <table>
+        <tr>
+            <td>Libelle</td>
+            <td>Prix unitaire</td>
+            <td>quantite</td>
+        </tr>
+        <tr>
+            <td>Orange</td>
+            <td>25f</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>mangue</td>
+            <td>25f</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td rowspan="2">banane</td>
+            <td>25f</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>100f</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>Avocat</td>
+            <td>250f</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>somme</td>
+            <td colspan="2">300f</td>
+        </tr>
+        <tfoot>
+            <tr>
+                <th colspan="3">Merci pour votre fidelite !</th>
+            </tr>
+        </tfoot>
+    </table>
+    <hr>
+    <legend>Mes notes</legend>
+    <table>
+        <thead>
+            <th>nom</th>
+            <th>prenoms</th>
+            <th>filiere</th>
+            <th>niveau</th>
+            <th>matiere</th>
+            <th>note</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Gomez</td>
+                <td>jacob</td>
+                <td>informatique</td>
+                <td>licence3</td>
+                <td>HTML</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>Somasse</td>
+                <td>astride</td>
+                <td>finance</td>
+                <td>Master 2</td>
+                <td>comptabilite des societes</td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <td>Dansou</td>
+                <td>Anselme</td>
+                <td>electronique</td>
+                <td>licence 2</td>
+                <td>electricite de batiments</td>
+                <td>14</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th>nom</th>
+            <th>prenoms</th>
+            <th>filiere</th>
+            <th>niveau</th>
+            <th>matiere</th>
+            <th>note</th>
+        </tfoot>
+    </table>
+
+</body>
+</html>

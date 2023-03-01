@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modifier</title>
+</head>
+<body>
+    <h1>Modifer son profil</h1>
+    <form >
+        <fieldset>
+            <legend>info d'utilisateur</legend>
+            <div>
+                <label for="mat">Votre matricule</label>
+                <input type="text" name="mat" id="mat" readonly value="SD4SD54DC5X" >
+            </div>
+            <div>
+                <label for="nom">Votre nom</label>
+                <input type="text" name="nom" id="nom" autofocus value="gomez" >
+            </div>
+
+            <div>
+                <label for="prenoms">Votre Prenoms</label>
+                <input type="text" name="prenoms" id="prenoms" value="jacob">
+            </div>
+            <div>
+                <label for="age">Votre age</label>
+                <input type="number" name="age " id="age" value="555" step="1">
+            </div>
+            <div>
+                <label for="dateNaiss">Votre date de naissance</label>
+                <input type="text" value="28/04/2021" name="dateNaiss" id="dateNaiss">
+            </div>
+            <div>
+                <label for="photo">votre photo de profil</label>
+                <input type="file" accept="image/png, image/jpeg" id="photo" name="photo">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Preference</legend>
+            <div>
+                <h3>Votre Sexe?</h3>
+                <label for="masculin">
+                    <input type="radio" checked name="sexe" id="masculin"> Masculin
+                </label>
+                <label for="feminin">
+                    <input type="radio" name="sexe" id="feminin"> Feminin
+                </label>
+    
+            </div>
+            <div>
+                <h3>Votre fruit preferé</h3>
+                <label for="mangue">
+                    <input type="checkbox" name="fruit" id="mangue"> Mangue
+                </label>
+                <label for="orange">
+                    <input type="checkbox" name="fruit" id="orange"> Orange
+                </label>
+                <label for="banane">
+                    <input type="checkbox" checked name="fruit" id="banane"> banane
+                </label>
+            </div>
+            <div>
+                <label for="qt">pourcentage</label>
+                <input type="range" disabled value="1500" max="2000" >
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Localisation</legend>
+            <div>
+                <label for="pays">Votre pays de residence</label>
+                <select name="pays" id="pays" >
+                    <option value="">selectionnez votre pays?</option>
+                    <optgroup label="afrique">
+                        <option value="benin" selected>Benin</option>
+                        <option value="togo">Togo</option>
+                    </optgroup>
+                    <optgroup label="europe">
+                        <option value="france">france</option>
+                        <option value="belgique">belgique</option>
+                    </optgroup>
+                    <optgroup label="amerique">
+                        <option value="mexique">mexique</option>
+                    </optgroup>
+                    <optgroup label="asie">
+                        <option value="japon">Japon</option>
+                    </optgroup>
+                    <optgroup label="oceanie">
+                        <option value="australie">autralie</option>
+                    </optgroup>
+                   
+                </select>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>données d'authentification</legend>
+            <div>
+                <label for="email">Votre email</label>
+                <input type="email" value="demo@gmail.com" name="email" id="email">
+            </div>
+            <div>
+                <label for="password">votre mots de passe</label>
+                <input type="password" value="2222222222222" name="password" id="password">
+            </div>
+        </fieldset>
+        
+        <div>
+            <button type="submit">sauvegarder</button>
+            
+        </div>
+    </form>
+</body>
+</html>
